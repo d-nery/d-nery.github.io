@@ -1,0 +1,121 @@
+.content {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #e6e6e6;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content:before {
+  content: "";
+  height: 120vh;
+  width: 120vw;
+  position: fixed;
+  top: -10vh;
+  left: -10vw;
+  z-index: -1;
+  display: block;
+  background-color: #1a1a1a;
+  background-image: url("../img/code.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+}
+
+.content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.content > div .profile-pic {
+  width: 250px;
+  height: 250px;
+  max-width: 60vw;
+  max-height: 60vw;
+  border-radius: 100%;
+  border-width: 15px;
+  border-style: solid;
+  margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+  .content > div .profile-pic {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.content > div .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .content > div .social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.content > div .social a i {
+  font-size: 36px;
+  color: #e6e6e6;
+}
+
+.content > div .social a i:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .content > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
