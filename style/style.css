@@ -1,4 +1,5 @@
 .content {
+  font-family: 'Nunito', sans-serif;
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -10,10 +11,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -40,6 +41,20 @@
           filter: blur(25px);
 }
 
+.content h1 {
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 1.5em;
+  }
+}
+
+.content h1 strong {
+  font-weight: 600;
+}
+
 .content > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,6 +69,7 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  margin-bottom: 50px;
 }
 
 .content > div .profile-pic {

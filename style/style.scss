@@ -2,6 +2,8 @@ $dark: lighten(black, 10%);
 $light: darken(white, 10%);
 
 .content {
+    font-family: 'Nunito', sans-serif;
+
     &:before {
         content: "";
         height: 120vh;
@@ -35,15 +37,28 @@ $light: darken(white, 10%);
     background-color: transparent;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h1 {
+        font-size: 2em;
+
+        @media(max-width: 768px) {
+            font-size: 1.5em;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    }
 
     & > div {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
+        margin-bottom: 50px;
 
         .profile-pic {
             width: 250px;
@@ -59,7 +74,6 @@ $light: darken(white, 10%);
             }
 
             margin-right: 100px;
-            // margin-left: 100px;
 
             @media(max-width: 768px) {
                 margin-right: 0;
